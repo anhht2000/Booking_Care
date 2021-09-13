@@ -1,0 +1,22 @@
+.about {
+  display: flex;
+  width: 1158px;
+  max-width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 55px 0 0 0;
+  &__title {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 900;
+    padding-bottom: 20px;
+  }
+  &__media {
+    width: 50%;
+  }
+  &__info {
+    width: 50%;
+    font-size: 15px;
+    text-align: justify;
+  }
+}

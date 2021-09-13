@@ -1,0 +1,202 @@
+$primary_color: #333;
+
+body {
+  color: $primary_color;
+}
+.container {
+  width: 1158px;
+  margin: auto;
+  max-width: 100%;
+  .header {
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      &-icon {
+        width: 10%;
+        i {
+          font-size: 20px;
+          color: #a89696;
+        }
+      }
+      &-logo {
+        width: 90%;
+        img {
+          width: 60%;
+          height: 100%;
+        }
+      }
+    }
+    &__center {
+      width: 62%;
+      &-nav {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        &__item {
+          margin-left: 15px;
+          &-title {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: $primary_color;
+          }
+          &-subtitle {
+            margin: 0;
+            padding-top: 3px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &__right {
+      width: 13%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      &-icon {
+        color: #379fe6;
+        margin-right: 3px;
+      }
+      &-text {
+        font-weight: 600;
+        color: #9e9c9c;
+      }
+      &-language {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 16px;
+        font-weight: 600;
+        &-VI {
+          color: #ccc;
+          margin: 0;
+          cursor: pointer;
+          padding-right: 10px;
+          &.active {
+            color: orange;
+          }
+        }
+        &-EN {
+          color: #ccc;
+          margin: 0;
+          cursor: pointer;
+          &.active {
+            color: orange;
+          }
+        }
+      }
+    }
+  }
+}
+.banner {
+  background: url("../image/background.jpg") center center/cover no-repeat;
+  padding-top: 37%;
+  position: relative;
+  &__container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    &-content {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
+      text-align: center;
+      padding-top: 55px;
+      color: white;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px #333;
+      &-text {
+        margin: 0;
+        font-size: 32px;
+      }
+      &-subtext {
+        margin: 0;
+        font-size: 32px;
+      }
+    }
+    &-search {
+      position: relative;
+      // text-align: center;
+      width: 420px;
+      margin: 0 auto;
+      border-radius: 30px;
+      background-color: yellow;
+      padding: 14px 0;
+
+      &-input {
+        border-radius: 30px;
+        width: calc(100% - 50px);
+        margin-right: auto;
+        border: none;
+        background-color: yellow;
+        outline: none;
+        font-size: 19px;
+        margin-left: 50px;
+      }
+      &-icon {
+        position: absolute;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        font-size: 18px;
+      }
+    }
+    &-connect {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      padding-bottom: 75px;
+      &-google {
+        margin-right: 20px;
+        img {
+          height: 32px;
+        }
+      }
+      &-appstore {
+        img {
+          height: 32px;
+        }
+      }
+    }
+    &-box {
+      background-image: linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 1)
+      );
+      padding-top: 60px;
+      .banner__container-selection {
+        width: 890px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        &__item {
+          text-align: center;
+          padding: 0px 23px;
+          img {
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+          }
+          p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

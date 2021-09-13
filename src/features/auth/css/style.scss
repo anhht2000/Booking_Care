@@ -1,0 +1,64 @@
+//Large Screen - 993 to 1170 screen size
+@mixin lg-screen {
+  @media only screen and (max-width: 1170px) {
+    @content;
+  }
+}
+
+//Medium Screen - 768 to 992 screen size
+@mixin md-screen {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+//Medium Screen - 575 to 767 screen size
+@mixin sm-screen {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+//Medium Screen - below 575 screen size
+@mixin xs-screen {
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+.login__container {
+  height: 100vh;
+  filter: blur(8px);
+}
+.form_login {
+  width: 400px;
+  max-width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include xs-screen {
+    width: 300px;
+  }
+  .form__handle {
+    margin: 5px auto 0;
+    #text-pass-error {
+      color: #f44336;
+      margin: 4px 14px 0;
+    }
+    .MuiCard-root {
+      padding: 50px 10px;
+    }
+    .button__group {
+      display: block;
+      text-align: center;
+      #btn-twitter {
+        background-color: rgb(49, 189, 231);
+      }
+      .button_auth {
+        margin: 4px 0;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+$primary_color: #49bce2;
+
+$tranparent_color: #b9c3b9cc;
+.slider__container {
+  background: #fff;
+  margin-top: 80px;
+  border: 1px solid #e2e2e2;
+  .slider__content {
+    padding: 30px 0;
+    width: 1158px;
+    max-width: 100%;
+    margin: 0 auto;
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 15px;
+
+      &__title {
+        margin: 0;
+        text-transform: capitalize;
+      }
+      &__link {
+        font-weight: lighter;
+        text-decoration: none;
+        background-color: #ebebeb;
+        font-size: 13px;
+        padding: 10px;
+        color: black;
+      }
+    }
+    .box__item-handbook {
+      display: flex !important;
+      &-img {
+        width: 50%;
+        height: 150px;
+        object-fit: cover;
+      }
+      &-title {
+        width: 50%;
+        margin: 0;
+        padding: 10px 25px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    .box__item {
+      padding: 0 5px;
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 185px;
+        object-fit: cover;
+      }
+      p {
+        margin: 5px 0;
+      }
+
+      .box__item--circle {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+      }
+      .info {
+        text-align: center;
+        &__degree {
+        }
+        &__department {
+        }
+      }
+    }
+  }
+}
+.slick-prev {
+  background-color: $tranparent_color !important;
+  width: auto !important;
+  height: 40px !important;
+  z-index: 2 !important;
+  border-radius: 50%;
+  &::before {
+    color: black !important;
+    padding: 15px !important;
+  }
+}
+.slick-next {
+  background-color: $tranparent_color !important;
+  width: auto !important;
+  height: 40px !important;
+  z-index: 2 !important;
+  border-radius: 50%;
+  &::before {
+    color: black !important;
+    padding: 15px !important;
+  }
+}
+.footer {
+  margin-top: 15px;
+  text-align: center;
+  background-color: $primary_color;
+  &__content {
+    width: 1158px;
+    max-width: 100%;
+    margin: 0 auto;
+    p {
+      color: white;
+      padding: 10px 0;
+      margin: 0;
+      a {
+        text-decoration: none;
+        color: yellow;
+      }
+    }
+  }
+}
